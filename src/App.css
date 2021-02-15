@@ -3,6 +3,7 @@
 :root {
   --primary-white: #fff;
   --primary-grey: #9aa19c;
+  --primary-dark: rgba(255, 255, 255, 0);
 }
 
 body {
@@ -64,14 +65,17 @@ nav ul li {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: var(--primary-white) !important ;
-  border-bottom: 0.1875rem;
+  border-bottom: 0.1875rem solid var(--primary-dark);
 }
-.navbar-brandd {
+.navbar-brand {
   max-width: 17.75rem;
   padding: 0 !important ;
   height: 2.5rem !important;
 }
 .navbar-nav > li > a.active,
-.navbar-nav > li > a:focus {
+.navbar-nav > li > a.active:focus {
+  border-bottom: 0.1875rem solid var(--primary-grey);
+}
+.navbar-nav > li > a:hover {
   border-bottom: 0.1875rem solid var(--primary-grey);
 }
