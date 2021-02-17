@@ -1,11 +1,15 @@
-import React from "react";
 import Typed from "react-typed";
+import Button from "react-bootstrap/Button";
 
 const Header = () => {
   return (
     <div className="header-wrapper">
       <div className="main-info">
-        <h1> web development and websites promotions </h1>
+        <h1>
+          {" "}
+          Web Development/Design, App Development/Design, Cyber Security and
+          Software Engineering
+        </h1>
         <Typed
           className="typed-text"
           strings={["web design", "Web Development", "Android Apps"]}
@@ -13,9 +17,7 @@ const Header = () => {
           backSpeed={60}
           loop
         />
-        <a href="#" className="btn-main-offer">
-          Contact Me
-        </a>
+        <Button> CONTACT ME </Button>
       </div>
     </div>
   );
