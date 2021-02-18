@@ -100,7 +100,7 @@ nav ul li {
   background: url(background3.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 .main-info {
   display: flex;
@@ -123,7 +123,7 @@ nav ul li {
 
 /* *******typed text******* */
 .typed-text {
-  font-size: 2 rem;
+  font-size: 2.2rem;
   color: var(--primary-whitish);
 }
 
@@ -138,16 +138,13 @@ nav ul li {
 
 /* ************HEADER MAIN OFFER BUTTON**********8 */
 .btn-main-offer {
-  border: 1px solid var(--primary-orange);
   text-transform: uppercase;
-  border-radius: 0;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
-  color: var(--primary-orange);
   margin-top: 2rem;
 }
 .btn-main-offer:hover {
   text-decoration: none;
-  background-color: var(--primary-orange);
+  background-color: var(--primary-green) !important;
   transition: 0.2s ease-in-out;
 }
 
@@ -160,33 +157,166 @@ nav ul li {
 }
 /* *****************ABOUT ME***************** */
 .block-item {
+  /* background-image: url(./assets/keyboard.jpg); */
+  background-color: var(--primary-whitish);
+
   display: flex;
   justify-content: center;
   text-align: center;
-  margin: auto;
+
+  margin: 0;
 }
+.block-item div {
+  margin-top: 3.9rem;
+  margin-bottom: 3.9rem;
+  max-width: 50rem;
+  height: 30rem;
+}
+/* .block-item.background-image {
+  height: 60%;
+  width: 60%;
+} */
+
 .block-item-1 {
+  height: 20rem;
+
+  border-radius: 1rem;
+
   margin: 0.5rem;
   border: 0.5rem;
-  padding: 0.5rem;
+  padding: 1rem;
   width: 30rem;
   background-color: var(--primary-whitish);
+
+  box-sizing: border-box;
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
 .block-item-1 > img {
   height: 200px;
   width: 200px;
 }
 .block-item-2 {
+  height: 20rem;
+  overflow: scroll;
+  overflow-x: hidden;
+  /* overflow: hidden; */
+
+  border-radius: 1rem;
+
   margin: 0.5rem;
   border: 0.5rem;
-  padding: 0.5rem;
+  padding: 1rem;
   width: 30rem;
   background-color: var(--primary-whitish);
+
+  box-sizing: border-box;
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
+
 .block-item-2 h3 {
   text-align: center;
 }
 .block-item-2 p {
   text-align: justify;
   font-size: medium;
+}
+/* ****************SPLIDE SLIDER******************** */
+.splide__slide.is-active.is-visible {
+}
+.splide__slide > img {
+  height: 50%;
+  width: 50%;
+}
+
+.splide__slide.is-active > img {
+  /* box-sizing: border-box; */
+  /* border: 1px solid rgba(0, 0, 0, 0.2); */
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.25);
+  height: auto;
+  width: auto;
+}
+
+.splide__slide.is-active.is-is-visible > img {
+}
+/* **************MY SERVICES************** */
+.line {
+  border-left: 2px solid grey;
+  height: 31rem;
+  border-radius: 100px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 89rem;
+}
+.main > h1 {
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+
+  /* height: 50rem; */
+}
+.main > hr {
+  width: 150px;
+  border: solid 1px grey;
+}
+.service-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin: auto;
+}
+.service-section > p {
+  margin: auto;
+  border: 0;
+  padding: 5rem;
+}
+.service-section-1 {
+  box-sizing: border-box;
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.25);
+
+  margin: 0.5rem;
+  margin-right: 32rem;
+  border: 0.5rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 30rem;
+}
+.service-section-2 {
+  box-sizing: border-box;
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.25);
+
+  margin: 0.5rem;
+  margin-left: 32rem;
+  border: 0.5rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 30rem;
+}
+.service-section-3 {
+  box-sizing: border-box;
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.25);
+
+  margin: 0.5rem;
+  margin-right: 32rem;
+  border: 0.5rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 30rem;
+}
+.service-section-4 {
+  box-sizing: border-box;
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.25);
+
+  margin: 0.5rem;
+  margin-left: 32rem;
+  border: 0.5rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 30rem;
 }

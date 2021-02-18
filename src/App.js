@@ -6,10 +6,11 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Contact from "./components/Contact";
 import Aboutme from "./components/Aboutme";
+import Services from "./components/Services";
 
 function App() {
   return (
-    <>
+    <div>
       <Particles
         params={{
           particles: {
@@ -30,11 +31,16 @@ function App() {
           },
         }}
       />
+
       <Navbar />
+
       <Header />
+
       <Aboutme />
+
+      <Services />
       {/* <Contact /> */}
-    </>
+    </div>
   );
 }
 

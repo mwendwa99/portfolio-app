@@ -30,7 +30,21 @@ const Navbar = () => {
     var Scroll = require("react-scroll");
     var scroll = Scroll.animateScroll;
 
-    scroll.scrollTo(800, {
+    scroll.scrollTo(605, {
+      duration: 1500,
+      delay: 100,
+      smooth: true,
+      containerId: "ContainerElementID",
+      offset: 50, // Scrolls to element + 50 pixels down the page
+    });
+  };
+
+  // scroll to services
+  const services = () => {
+    var Scroll = require("react-scroll");
+    var scroll = Scroll.animateScroll;
+
+    scroll.scrollTo(1207, {
       duration: 1500,
       delay: 100,
       smooth: true,
@@ -40,13 +54,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav className="navbar fixed-top  navbar-expand-lg navbar-light bg-dark">
       <div className="container">
         <a className="navbar-brand" href="#">
           <img className="logo" src={mylogo} alt="mylogo" />
         </a>
         <button
-          className="navbar-toggler"
+          class="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarSupportedContent"
@@ -54,7 +68,7 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <FontAwesomeIcon icon={faBars} style={{ color: "white" }} />
+          <span class="navbar-toggler-icon"></span>
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -70,7 +84,7 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" onClick={services}>
                 Services
               </a>
             </li>

@@ -1,9 +1,11 @@
 import React from "react";
 import passport from "../assets/passport.png";
+import keyboard from "../assets/keyboard.jpg";
 
 const Aboutme = () => {
   return (
     <div className="block-item">
+      {/* <img src={keyboard} alt="" /> */}
       <div className="block-item-1">
         <h3>Brian Mwendwa</h3>
         <img src={passport} alt="passport" />

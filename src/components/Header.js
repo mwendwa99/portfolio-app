@@ -7,17 +7,23 @@ const Header = () => {
       <div className="main-info">
         <h1>
           {" "}
-          Web Development/Design, App Development/Design, Cyber Security and
-          Software Engineering
+          Web Development/Design, App Development/Design, CCNA and Software
+          Development
         </h1>
         <Typed
           className="typed-text"
-          strings={["web design", "Web Development", "Android Apps"]}
-          typeSpeed={40}
-          backSpeed={60}
+          strings={[
+            "web Design",
+            "Web Development",
+            "Android Apps",
+            "Desktop Apps",
+            "Cisco Certified Network Associate",
+          ]}
+          typeSpeed={60}
+          backSpeed={80}
           loop
         />
-        <Button> CONTACT ME </Button>
+        <Button className="btn-main-offer"> CONTACT ME </Button>
       </div>
     </div>
   );
